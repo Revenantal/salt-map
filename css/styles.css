@@ -1,0 +1,53 @@
+body {
+    margin:0;
+    font-family: 'Annie Use Your Telescope', cursive;
+    overflow:hidden;
+    background-color: #1e1e1e;
+}
+
+#map {
+    background: url('../img/water.png');
+    -webkit-transition: transform 1s;
+    transition: transform 1s;
+    transform-origin:left top;
+}
+
+a {
+    color: #e80000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.cell {
+    border:1px solid rgba(0, 0, 0, 0.05);
+    width:50px;
+    height:50px;
+    float:left;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.cell.island {
+    background-image:url('../img/island.png');
+}
+
+.cell:hover {
+    background-color:rgba(0,0,0,0.25);
+}
+
+.controls {
+    position: fixed;
+    bottom: 20px;
+    color: white;
+    font-size:24px;
+    text-align: center;
+    right: 20px;
+}
+
+.controls > div {
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+
